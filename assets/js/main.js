@@ -235,10 +235,7 @@
   function updateYear() {
     const yearElement = document.querySelector(".copyright span");
     const currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
-
-    const creditsElement = document.querySelector(".credits");
-    creditsElement.textContent = '';
+    yearElement.textContent = currentYear
   }
 
   // Run the function when the page loads
