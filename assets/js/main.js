@@ -231,4 +231,17 @@
    */
   new PureCounter();
 
+  // Update year
+  function updateYear() {
+    const yearElement = document.querySelector(".copyright span");
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+
+    const creditsElement = document.querySelector(".credits");
+    creditsElement.textContent = '';
+  }
+
+  // Run the function when the page loads
+  document.addEventListener("DOMContentLoaded", updateYear);
+
 })()
